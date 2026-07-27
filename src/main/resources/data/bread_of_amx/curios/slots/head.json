@@ -1,7 +1,0 @@
-{
-  "replace": true,
-  "size": 1,
-  "entities": ["player"],
-  "icon": "bread_of_amx:slot/empty_certificate",
-  "value": "bread_of_amx:driest_bread"
-}

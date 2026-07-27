@@ -1,6 +1,7 @@
 package Alone818.com.bread_of_amx.init;
 
 import Alone818.com.bread_of_amx.Bread_of_amx;
+import Alone818.com.bread_of_amx.itemcuiros.driest_bread;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -10,6 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import Alone818.com.bread_of_amx.items.*;
+import Alone818.com.bread_of_amx.itemcuiros.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -18,7 +20,8 @@ public class ModItems {
             ITEMS.register("toast",()->new Item(new Item.Properties().food(Modfoods.TOAST))) ;
     public  static final RegistryObject<Item> PACKED_TOAST =
             ITEMS.register("packed_toast",()-> new BlockItem(ModBlocks.PACKED_TOAST.get(),new Item.Properties()));
-
+    public static final RegistryObject<Item> DRIEST_BREAD =
+            ITEMS.register("driest_bread", () -> new driest_bread(new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
