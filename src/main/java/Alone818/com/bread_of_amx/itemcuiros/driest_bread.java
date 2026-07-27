@@ -1,5 +1,6 @@
 package Alone818.com.bread_of_amx.itemcuiros;
 
+import Alone818.com.bread_of_amx.init.Modfoods;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -19,6 +20,7 @@ public class driest_bread extends Item implements ICurioItem {  // 实现 ICurio
 
     public driest_bread(Properties properties) {
         super(properties);
+        properties.food(Modfoods.DRIESTBREAD);
     }
 
     // 1️⃣ 核心 Tick 逻辑（每帧执行，已匹配方法签名）
@@ -38,12 +40,12 @@ public class driest_bread extends Item implements ICurioItem {  // 实现 ICurio
     }
     @Override
     public void curioTick(SlotContext slotContext, ItemStack stack) {
-        System.out.println("curioTick called");
         this.equipmentTick(slotContext.entity());
         // ... 原有代码
     }
     protected void equipmentTick(LivingEntity livingEntity) {
-        livingEntity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 20, 0, false, false, true));
+        livingEntity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, false, false, true));
     }
+
     // 其他可选重写：onUnequip, canEquip, canUnequip 等
 }
