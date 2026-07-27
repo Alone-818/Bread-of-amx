@@ -18,9 +18,10 @@ import java.util.UUID;
 
 public class driest_bread extends Item implements ICurioItem {  // 实现 ICurioItem
 
-    public driest_bread(Properties properties) {
-        super(properties);
-        properties.food(Modfoods.DRIESTBREAD);
+    public driest_bread() {
+        super(new Item.Properties()
+                .food(Modfoods.DRIESTBREAD)
+                .stacksTo(1));
     }
 
     // 1️⃣ 核心 Tick 逻辑（每帧执行，已匹配方法签名）
@@ -33,11 +34,12 @@ public class driest_bread extends Item implements ICurioItem {  // 实现 ICurio
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(SlotContext slotContext, UUID uuid, ItemStack stack) {
         Multimap<Attribute, AttributeModifier> modifiers = HashMultimap.create();
         // 添加护甲值（例如 +5 点护甲）
-        modifiers.put(Attributes.ARMOR, new AttributeModifier(uuid, "driest_bread_armor", 5.0, AttributeModifier.Operation.ADDITION));
+        modifiers.put(Attributes.ARMOR, new AttributeModifier(uuid, "driest_bread_armor", 1.0, AttributeModifier.Operation.ADDITION));
         // 可选：添加盔甲韧性（例如 +2 点韧性）
-        modifiers.put(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(uuid, "driest_bread_toughness", 2.0, AttributeModifier.Operation.ADDITION));
+        modifiers.put(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(uuid, "driest_bread_toughness", 0.5, AttributeModifier.Operation.ADDITION));
         return modifiers;
     }
+    /*
     @Override
     public void curioTick(SlotContext slotContext, ItemStack stack) {
         this.equipmentTick(slotContext.entity());
@@ -46,6 +48,6 @@ public class driest_bread extends Item implements ICurioItem {  // 实现 ICurio
     protected void equipmentTick(LivingEntity livingEntity) {
         livingEntity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, false, false, true));
     }
-
+*/
     // 其他可选重写：onUnequip, canEquip, canUnequip 等
 }

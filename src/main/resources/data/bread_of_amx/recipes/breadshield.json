@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "ModTools",
+  "key": {
+    "#": {
+      "item": "bread_of_amx:driest_bread"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Y": {
+      "item": "minecraft:bread"
+    }
+  },
+  "pattern": [
+    "Y#Y",
+    "YXY",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "item": "bread_of_amx:breadshield"
+  },
+  "show_notification": true
+}

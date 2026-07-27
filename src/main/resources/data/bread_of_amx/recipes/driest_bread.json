@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "cookingtime": 800,
+  "experience": 0.7,
+  "group": "Modcuiroscrafting",
+  "ingredient": {
+    "item": "minecraft:bread"
+  },
+  "result": "bread_of_amx:driest_bread"
+}

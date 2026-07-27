@@ -19,7 +19,7 @@ public class ModItems {
     public  static final RegistryObject<Item> PACKED_TOAST =
             ITEMS.register("packed_toast",()-> new BlockItem(ModBlocks.PACKED_TOAST.get(),new Item.Properties()));
     public static final RegistryObject<Item> DRIEST_BREAD =
-            ITEMS.register("driest_bread", () -> new driest_bread(new Item.Properties()));
+            ITEMS.register("driest_bread", () -> new driest_bread());
     public static final RegistryObject<Item> BREADSHIELD =
             ITEMS.register("breadshield", breadshield::new);
     public static void register(IEventBus eventBus){

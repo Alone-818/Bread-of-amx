@@ -97,7 +97,7 @@ public class breadshield extends ShieldItem {
             }
 
             // 消耗1点耐久（被吃掉一口）
-            stack.hurtAndBreak(1, entity, (e) -> e.broadcastBreakEvent(entity.getUsedItemHand()));
+            stack.hurtAndBreak(50, entity, (e) -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 
             // 清除进食标记
             stack.getTag().remove("Eating");
