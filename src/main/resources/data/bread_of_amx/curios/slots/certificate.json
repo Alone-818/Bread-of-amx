@@ -1,0 +1,6 @@
+{
+  "replace": true,
+  "size": 1,
+  "entities": ["player"],
+  "icon": "bread_of_amx:slot/empty_certificate"
+}

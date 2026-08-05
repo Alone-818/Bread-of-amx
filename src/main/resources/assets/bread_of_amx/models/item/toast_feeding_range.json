@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/generated",
+  "textures": {
+    "layer0": "bread_of_amx:item/toast_feeding_range"
+  }
+}

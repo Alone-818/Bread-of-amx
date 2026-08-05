@@ -1,0 +1,23 @@
+{
+  "tab.bread_of_amx_material": "Breadcraft Material",
+  "tab.bread_of_amx_tools": "Breadcraft Tools",
+
+  "item.bread_of_amx.toast": "Toast",
+  "item.bread_of_amx.driest_bread": "Driest Bread",
+  "item.bread_of_amx.breadshield": "Bread Shield",
+  "item.bread_of_amx.toast_feeding_range": "Toast Feeding Range",
+  "item.bread_of_amx.toaster": "Toaster",
+
+  "block.bread_of_amx.packed_toast": "Packed Toast",
+  "block.bread_of_amx.toast_feeding_range": "Toast Feeding Range",
+  "block.bread_of_amx.toaster": "Toaster",
+
+  "container.bread_of_amx.toaster": "Toaster",
+
+  "jei.bread_of_amx.toaster": "Toaster",
+
+  "curios.identifier.certificate": "Certificate",
+
+  "curios.modifiers.certificate":"When on certificate"
+
+}
