@@ -22,6 +22,8 @@ public class ModItems {
             ITEMS.register("driest_bread", () -> new driest_bread());
     public static final RegistryObject<Item> BREADSHIELD =
             ITEMS.register("breadshield", breadshield::new);
+    public static final RegistryObject<Item> TOAST_FEEDING_RANGE =
+            ITEMS.register("toast_feeding_range",()-> new BlockItem(ModBlocks.TOAST_FEEDING_RANGE.get(),new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

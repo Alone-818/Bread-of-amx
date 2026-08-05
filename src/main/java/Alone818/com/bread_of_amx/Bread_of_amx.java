@@ -1,5 +1,6 @@
 package Alone818.com.bread_of_amx;
 
+import Alone818.com.bread_of_amx.init.ModBlockEntities;
 import Alone818.com.bread_of_amx.init.ModBlocks;
 import Alone818.com.bread_of_amx.init.ModCreativeModTabs;
 import Alone818.com.bread_of_amx.init.ModItems;
@@ -50,7 +51,7 @@ public class Bread_of_amx {
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
-
+        ModBlockEntities.register(modEventBus);
         //end region
 
         modEventBus.addListener(this::commonSetup);
